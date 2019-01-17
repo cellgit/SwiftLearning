@@ -21,7 +21,7 @@ class ProtocolListViewController: BaseTableViewController {
     
     override func tableViewData() {
         let data0 = TableViewDataStruct.init(title: "BasicProtocol", identifier: KBasicProtocolIdentifier)
-        tableviewDataArray = [data0]
+//        tableviewDataArray = [data0]
         let data1 = TableViewDataStruct.init(title: "BasicProtocolGrammar", identifier: KBasicProtocolGrammarIdentifier)
         tableviewDataArray = [data0,
                               data1]

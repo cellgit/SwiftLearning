@@ -11,6 +11,8 @@ import UIKit
 class SwiftGrammarViewController: BaseTableViewController {
     
     let KProtocolIdentifier = "ProtocolIdentifier"
+    let KRxSwiftIdentifier = "RxSwiftIdentifier"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +24,10 @@ class SwiftGrammarViewController: BaseTableViewController {
     
     override func tableViewData() {
         let data0 = TableViewDataStruct.init(title: "Swift Protocol", identifier: KProtocolIdentifier)
+        let data1 = TableViewDataStruct.init(title: "RxSwift", identifier: KRxSwiftIdentifier)
         
-        tableviewDataArray = [data0]
+        tableviewDataArray = [data0,
+                              data1]
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -33,6 +37,8 @@ class SwiftGrammarViewController: BaseTableViewController {
         switch tableviewDataArray[indexPath.row].identifier {
         case KProtocolIdentifier:
             vc = ProtocolListViewController.init()
+        case KRxSwiftIdentifier:
+            vc = RxListViewController.init()
         default:
             vc = ProtocolListViewController.init()
         }

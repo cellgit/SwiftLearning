@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A9CD03B1900C52CBA0002A /* Pods_SwiftSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */; };
 		F269869521E830390078C29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269869421E830390078C29F /* AppDelegate.swift */; };
 		F269869721E830390078C29F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269869621E830390078C29F /* ViewController.swift */; };
 		F269869A21E830390078C29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F269869821E830390078C29F /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D421E835560078C29F /* ProtocolListViewController.swift */; };
 		F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */; };
 		F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */; };
+		F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854BF21F068A400B7E58C /* RxListViewController.swift */; };
+		F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.release.xcconfig"; sourceTree = "<group>"; };
 		F269869121E830390078C29F /* SwiftSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F269869421E830390078C29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F269869621E830390078C29F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 		F26986D421E835560078C29F /* ProtocolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolListViewController.swift; sourceTree = "<group>"; };
 		F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolViewController.swift; sourceTree = "<group>"; };
 		F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolGrammarViewController.swift; sourceTree = "<group>"; };
+		F2B854BF21F068A400B7E58C /* RxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewController.swift; sourceTree = "<group>"; };
+		F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBasicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A9CD03B1900C52CBA0002A /* Pods_SwiftSeek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93125E0C7982E3775F851D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA023BFB52D082969737955B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */,
+				D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F269868821E830390078C29F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +125,8 @@
 				F26986AB21E8303B0078C29F /* SwiftSeekTests */,
 				F26986B621E8303C0078C29F /* SwiftSeekUITests */,
 				F269869221E830390078C29F /* Products */,
+				CA023BFB52D082969737955B /* Pods */,
+				93125E0C7982E3775F851D34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +224,8 @@
 		F2B854BE21F0683B00B7E58C /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F2B854BF21F068A400B7E58C /* RxListViewController.swift */,
+				F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -207,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F26986BC21E8303C0078C29F /* Build configuration list for PBXNativeTarget "SwiftSeek" */;
 			buildPhases = (
+				004F5BF176F2E2C976BDD058 /* [CP] Check Pods Manifest.lock */,
 				F269868D21E830390078C29F /* Sources */,
 				F269868E21E830390078C29F /* Frameworks */,
 				F269868F21E830390078C29F /* Resources */,
+				E213A32041390E2854457BD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,6 +358,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		004F5BF176F2E2C976BDD058 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftSeek-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E213A32041390E2854457BD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F269868D21E830390078C29F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,10 +412,12 @@
 				F26986CC21E831270078C29F /* SWCoreMLHomeViewController.swift in Sources */,
 				F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */,
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
+				F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */,
 				F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */,
 				F269869721E830390078C29F /* ViewController.swift in Sources */,
 				F269869521E830390078C29F /* AppDelegate.swift in Sources */,
 				F269869D21E830390078C29F /* SwiftSeek.xcdatamodeld in Sources */,
+				F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */,
 				F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +591,7 @@
 		};
 		F26986BD21E8303C0078C29F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +610,7 @@
 		};
 		F26986BE21E8303C0078C29F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
