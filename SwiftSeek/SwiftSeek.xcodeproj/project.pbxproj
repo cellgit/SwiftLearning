@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		56A9CD03B1900C52CBA0002A /* Pods_SwiftSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */; };
+		F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */; };
+		F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */; };
+		F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */; };
+		F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */; };
 		F269869521E830390078C29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269869421E830390078C29F /* AppDelegate.swift */; };
 		F269869721E830390078C29F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269869621E830390078C29F /* ViewController.swift */; };
 		F269869A21E830390078C29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F269869821E830390078C29F /* Main.storyboard */; };
@@ -49,6 +53,10 @@
 		02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.release.xcconfig"; sourceTree = "<group>"; };
+		F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEnum.swift; sourceTree = "<group>"; };
+		F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseListViewController.swift; sourceTree = "<group>"; };
+		F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPromiseViewController.swift; sourceTree = "<group>"; };
+		F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPromiseViewController.swift; sourceTree = "<group>"; };
 		F269869121E830390078C29F /* SwiftSeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F269869421E830390078C29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F269869621E830390078C29F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,24 @@
 				D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2396F1C21F7FD02002F4AE8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		F25ED5E7221D3E19001D4C70 /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */,
+				F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */,
+				F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */,
+			);
+			path = Promise;
 			sourceTree = "<group>";
 		};
 		F269868821E830390078C29F = {
@@ -205,6 +231,8 @@
 		F26986CE21E831670078C29F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F25ED5E7221D3E19001D4C70 /* Promise */,
+				F2396F1C21F7FD02002F4AE8 /* Enum */,
 				F2B854BE21F0683B00B7E58C /* RxSwift */,
 				F26986D321E835350078C29F /* Protocol */,
 			);
@@ -384,12 +412,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -406,15 +436,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */,
 				F26986CB21E831270078C29F /* SWARHomeViewController.swift in Sources */,
 				F26986CD21E831270078C29F /* SWMainViewController.swift in Sources */,
 				F26986D221E832900078C29F /* BaseTableViewController.swift in Sources */,
 				F26986CC21E831270078C29F /* SWCoreMLHomeViewController.swift in Sources */,
+				F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */,
 				F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */,
+				F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */,
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
 				F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */,
 				F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */,
 				F269869721E830390078C29F /* ViewController.swift in Sources */,
+				F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */,
 				F269869521E830390078C29F /* AppDelegate.swift in Sources */,
 				F269869D21E830390078C29F /* SwiftSeek.xcdatamodeld in Sources */,
 				F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */,
