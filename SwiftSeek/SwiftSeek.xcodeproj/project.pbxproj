@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		56A9CD03B1900C52CBA0002A /* Pods_SwiftSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */; };
 		F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */; };
+		F23FF70A22291BFB009A00B0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF70922291BFB009A00B0 /* Theme.swift */; };
+		F23FF70D22291DAB009A00B0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF70C22291DAB009A00B0 /* UserModel.swift */; };
+		F23FF71022291E0C009A00B0 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF70F22291E0C009A00B0 /* FilePath.swift */; };
 		F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */; };
 		F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */; };
 		F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */; };
@@ -54,6 +57,9 @@
 		45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.release.xcconfig"; sourceTree = "<group>"; };
 		F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEnum.swift; sourceTree = "<group>"; };
+		F23FF70922291BFB009A00B0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F23FF70C22291DAB009A00B0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F23FF70F22291E0C009A00B0 /* FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
 		F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseListViewController.swift; sourceTree = "<group>"; };
 		F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPromiseViewController.swift; sourceTree = "<group>"; };
 		F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPromiseViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,40 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		F23FF70722291BAB009A00B0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F23FF70E22291DF9009A00B0 /* Config */,
+				F23FF70B22291D80009A00B0 /* Model */,
+				F23FF70822291BE8009A00B0 /* Network */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F23FF70822291BE8009A00B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F23FF70922291BFB009A00B0 /* Theme.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F23FF70B22291D80009A00B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F23FF70C22291DAB009A00B0 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F23FF70E22291DF9009A00B0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F23FF70F22291E0C009A00B0 /* FilePath.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		F25ED5E7221D3E19001D4C70 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +212,7 @@
 				F26986C521E831270078C29F /* Classes */,
 				F269869421E830390078C29F /* AppDelegate.swift */,
 				F269869621E830390078C29F /* ViewController.swift */,
+				F23FF70722291BAB009A00B0 /* Manager */,
 				F269869821E830390078C29F /* Main.storyboard */,
 				F269869E21E8303B0078C29F /* Assets.xcassets */,
 				F26986A021E8303B0078C29F /* LaunchScreen.storyboard */,
@@ -412,6 +453,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -419,6 +461,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -442,14 +485,17 @@
 				F26986D221E832900078C29F /* BaseTableViewController.swift in Sources */,
 				F26986CC21E831270078C29F /* SWCoreMLHomeViewController.swift in Sources */,
 				F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */,
+				F23FF71022291E0C009A00B0 /* FilePath.swift in Sources */,
 				F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */,
 				F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */,
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
+				F23FF70A22291BFB009A00B0 /* Theme.swift in Sources */,
 				F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */,
 				F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */,
 				F269869721E830390078C29F /* ViewController.swift in Sources */,
 				F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */,
 				F269869521E830390078C29F /* AppDelegate.swift in Sources */,
+				F23FF70D22291DAB009A00B0 /* UserModel.swift in Sources */,
 				F269869D21E830390078C29F /* SwiftSeek.xcdatamodeld in Sources */,
 				F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */,
 				F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */,
@@ -631,6 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UTT4HQ4F3H;
 				INFOPLIST_FILE = SwiftSeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,6 +697,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UTT4HQ4F3H;
 				INFOPLIST_FILE = SwiftSeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

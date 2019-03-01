@@ -3,6 +3,7 @@ platform :ios, '9.0'
 use_frameworks!
 target 'SwiftSeek' do
 
+pod 'Alamofire', '~> 4.8.1'
 pod 'RxSwift', '~> 4.4.0'
 pod 'RxCocoa', '~> 4.4.0'
 pod 'PromiseKit', '~> 6.7.0'

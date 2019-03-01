@@ -30,14 +30,14 @@ class NetworkPromiseViewController: UIViewController {
     
     func setupFetchData() {
         //请求数据
-        fetchData(args: "foo=bar")
-            .done { data in
-                print("--- 请求结果 ---")
-                print(data)
-            }.catch { error in
-                print("--- 请求失败 ---")
-                print(error)
-        }
+//        fetchData(args: "foo=bar")
+//            .done { data in
+//                print("--- 请求结果 ---")
+//                print(data)
+//            }.catch { error in
+//                print("--- 请求失败 ---")
+//                print(error)
+//        }
     }
     
 
@@ -67,9 +67,9 @@ extension NetworkPromiseViewController {
     }
     
     
-    //请求数据
-    func fetchData(args: String) -> Promise<Any>{
-        //创建URL对象
+//    //请求数据
+//    func fetchData(args: String) -> Promise<Any>{
+//        //创建URL对象
 //        let urlString = "https://httpbin.org/get?\(args)"
 //        let url = URL(string:urlString)
 //        //创建请求对象
@@ -80,9 +80,9 @@ extension NetworkPromiseViewController {
 //            .validate() //这个也是PromiseKit提供的扩展方法，比如自动将 404 转成错误
 //            .map {
 //                //将请求结果转成对象
-////                try JSONDecoder().decode(HttpBin.self, from: $0.data)
+//                try JSONDecoder().decode(HttpBin.self, from: $0.data)
 //        }
-    }
+//    }
 }
 
 
