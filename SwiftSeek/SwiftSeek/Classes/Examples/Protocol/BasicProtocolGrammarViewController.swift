@@ -11,6 +11,8 @@ import UIKit
 class BasicProtocolGrammarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
         setup()
     }
     

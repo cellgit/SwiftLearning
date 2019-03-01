@@ -17,7 +17,7 @@ class PromiseListViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = .white
     }
     
     override func tableViewData() {

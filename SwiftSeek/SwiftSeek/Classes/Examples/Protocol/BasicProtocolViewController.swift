@@ -25,7 +25,7 @@ class BasicProtocolViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .white
         
         setupUI()
     }
