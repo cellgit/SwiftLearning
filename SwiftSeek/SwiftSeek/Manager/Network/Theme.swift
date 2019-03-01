@@ -15,9 +15,7 @@ typealias  ReqSuccess = (_ responseObject: AnyObject?)->Void
 typealias ReqError = (_ error: String)->Void
 
 struct Theme {
-    
     static let shared = Theme()
-    
     // requet: default is post
     public func request(method: HTTPMethod, path: String, parameters: [String : Any], isEncrypting : Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError){
         switch method {
@@ -29,9 +27,11 @@ struct Theme {
             self.postRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, sendError: sendError)
         }
     }
-    
+}
+
+private extension Theme {
     // post request
-    func postRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError) {
+    private func postRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError) {
         var headers = [String:String]()
         let token = UserInfo == nil ? "" : UserInfo!.token
         if isEncrypting {
@@ -55,7 +55,7 @@ struct Theme {
     }
     
     // get request
-    func getRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError){
+    private func getRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError){
         var headers = [String:String]()
         let token = UserInfo == nil ? "" : UserInfo!.token
         if isEncrypting {
@@ -77,6 +77,7 @@ struct Theme {
             }
         }
     }
+
 }
 
 extension Theme {
