@@ -179,6 +179,7 @@
 		F23FF70822291BE8009A00B0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F23FF7112229271E009A00B0 /* APIManager.swift */,
 				F23FF70922291BFB009A00B0 /* Theme.swift */,
 			);
 			path = Network;
@@ -187,7 +188,6 @@
 		F23FF70B22291D80009A00B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F23FF7112229271E009A00B0 /* APIManager.swift */,
 				F23FF70C22291DAB009A00B0 /* UserModel.swift */,
 			);
 			path = Model;

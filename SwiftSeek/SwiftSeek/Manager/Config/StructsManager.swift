@@ -8,10 +8,12 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
 struct SWNetworkParamsStruct {
     var url: String = ""
     var dict = [String : Any]()
+    var method = HTTPMethod.post
 }
 /// 数据解析成功后传递数据时用到的 Struct
 /// 用法：success(SWSucceedParamsStruct.init(array: array, json: json))

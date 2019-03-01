@@ -9,6 +9,7 @@
 import Foundation
 
 class APIManager: NSObject {
+    /// 此接口用`vapor3`框架完成
     static let baseUrl = "https://kokora.herokuapp.com/"
 }
 
