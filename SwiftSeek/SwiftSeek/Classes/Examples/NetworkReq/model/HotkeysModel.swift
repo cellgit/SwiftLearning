@@ -10,8 +10,11 @@ import UIKit
 import SwiftyJSON
 
 class HotkeysModel: NSObject {
+    /// id
     var id: String = ""
+    /// 快捷键
     var hotkey: String = ""
+    /// 功能描述
     var function: String = ""
 }
 
