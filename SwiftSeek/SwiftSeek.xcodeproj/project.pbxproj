@@ -46,6 +46,8 @@
 		F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */; };
 		F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854BF21F068A400B7E58C /* RxListViewController.swift */; };
 		F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */; };
+		F2C31F752247C73E00472C90 /* IndicatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C31F742247C73E00472C90 /* IndicatorListViewController.swift */; };
+		F2C31F772247C7C800472C90 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C31F762247C7C800472C90 /* IndicatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolGrammarViewController.swift; sourceTree = "<group>"; };
 		F2B854BF21F068A400B7E58C /* RxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewController.swift; sourceTree = "<group>"; };
 		F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBasicViewController.swift; sourceTree = "<group>"; };
+		F2C31F742247C73E00472C90 /* IndicatorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorListViewController.swift; sourceTree = "<group>"; };
+		F2C31F762247C7C800472C90 /* IndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +354,7 @@
 		F26986CE21E831670078C29F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F2C31F6F2247C6FA00472C90 /* NVActivityIndicatorView */,
 				F23FF7132229297F009A00B0 /* NetworkReq */,
 				F25ED5E7221D3E19001D4C70 /* Promise */,
 				F2396F1C21F7FD02002F4AE8 /* Enum */,
@@ -376,6 +381,47 @@
 				F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */,
 			);
 			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		F2C31F6F2247C6FA00472C90 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				F2C31F712247C6FA00472C90 /* vc */,
+				F2C31F732247C6FA00472C90 /* view */,
+				F2C31F702247C6FA00472C90 /* presenter */,
+				F2C31F722247C6FA00472C90 /* model */,
+			);
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		F2C31F702247C6FA00472C90 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F2C31F712247C6FA00472C90 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F2C31F742247C73E00472C90 /* IndicatorListViewController.swift */,
+				F2C31F762247C7C800472C90 /* IndicatorViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F2C31F722247C6FA00472C90 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F2C31F732247C6FA00472C90 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +580,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -543,6 +590,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -561,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C31F772247C7C800472C90 /* IndicatorViewController.swift in Sources */,
 				F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */,
 				F23FF72D22292F6E009A00B0 /* ProtocolsManager.swift in Sources */,
 				F26986CB21E831270078C29F /* SWARHomeViewController.swift in Sources */,
@@ -572,6 +621,7 @@
 				F23FF71F22292C6C009A00B0 /* SketchHotkeysView.swift in Sources */,
 				F23FF72322292D2B009A00B0 /* StructsManager.swift in Sources */,
 				F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */,
+				F2C31F752247C73E00472C90 /* IndicatorListViewController.swift in Sources */,
 				F23FF72F22292FDA009A00B0 /* TypealiasManager.swift in Sources */,
 				F23FF7122229271E009A00B0 /* APIManager.swift in Sources */,
 				F23FF717222929CA009A00B0 /* NetReqListViewController.swift in Sources */,
