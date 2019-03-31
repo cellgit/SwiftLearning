@@ -44,6 +44,8 @@
 		F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D421E835560078C29F /* ProtocolListViewController.swift */; };
 		F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */; };
 		F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */; };
+		F29432B3224FBC450038B517 /* FunctionalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29432B2224FBC450038B517 /* FunctionalListViewController.swift */; };
+		F29432B5224FBC640038B517 /* BasicFunctionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29432B4224FBC640038B517 /* BasicFunctionalViewController.swift */; };
 		F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854BF21F068A400B7E58C /* RxListViewController.swift */; };
 		F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */; };
 		F2C31F752247C73E00472C90 /* IndicatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C31F742247C73E00472C90 /* IndicatorListViewController.swift */; };
@@ -113,6 +115,8 @@
 		F26986D421E835560078C29F /* ProtocolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolListViewController.swift; sourceTree = "<group>"; };
 		F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolViewController.swift; sourceTree = "<group>"; };
 		F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolGrammarViewController.swift; sourceTree = "<group>"; };
+		F29432B2224FBC450038B517 /* FunctionalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalListViewController.swift; sourceTree = "<group>"; };
+		F29432B4224FBC640038B517 /* BasicFunctionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFunctionalViewController.swift; sourceTree = "<group>"; };
 		F2B854BF21F068A400B7E58C /* RxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewController.swift; sourceTree = "<group>"; };
 		F2B854C121F06A4300B7E58C /* RxBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBasicViewController.swift; sourceTree = "<group>"; };
 		F2C31F742247C73E00472C90 /* IndicatorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorListViewController.swift; sourceTree = "<group>"; };
@@ -354,6 +358,7 @@
 		F26986CE21E831670078C29F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F29432AD224FBBE00038B517 /* FunctionalSwift */,
 				F2C31F6F2247C6FA00472C90 /* NVActivityIndicatorView */,
 				F23FF7132229297F009A00B0 /* NetworkReq */,
 				F25ED5E7221D3E19001D4C70 /* Promise */,
@@ -372,6 +377,47 @@
 				F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F29432AD224FBBE00038B517 /* FunctionalSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F29432B0224FBC0F0038B517 /* vc */,
+				F29432AF224FBC0F0038B517 /* view */,
+				F29432AE224FBC0F0038B517 /* presenter */,
+				F29432B1224FBC0F0038B517 /* model */,
+			);
+			path = FunctionalSwift;
+			sourceTree = "<group>";
+		};
+		F29432AE224FBC0F0038B517 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F29432AF224FBC0F0038B517 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F29432B0224FBC0F0038B517 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F29432B2224FBC450038B517 /* FunctionalListViewController.swift */,
+				F29432B4224FBC640038B517 /* BasicFunctionalViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F29432B1224FBC0F0038B517 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		F2B854BE21F0683B00B7E58C /* RxSwift */ = {
@@ -611,6 +657,7 @@
 			files = (
 				F2C31F772247C7C800472C90 /* IndicatorViewController.swift in Sources */,
 				F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */,
+				F29432B5224FBC640038B517 /* BasicFunctionalViewController.swift in Sources */,
 				F23FF72D22292F6E009A00B0 /* ProtocolsManager.swift in Sources */,
 				F26986CB21E831270078C29F /* SWARHomeViewController.swift in Sources */,
 				F26986CD21E831270078C29F /* SWMainViewController.swift in Sources */,
@@ -638,6 +685,7 @@
 				F269869721E830390078C29F /* ViewController.swift in Sources */,
 				F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */,
 				F269869521E830390078C29F /* AppDelegate.swift in Sources */,
+				F29432B3224FBC450038B517 /* FunctionalListViewController.swift in Sources */,
 				F23FF70D22291DAB009A00B0 /* UserModel.swift in Sources */,
 				F269869D21E830390078C29F /* SwiftSeek.xcdatamodeld in Sources */,
 				F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */,

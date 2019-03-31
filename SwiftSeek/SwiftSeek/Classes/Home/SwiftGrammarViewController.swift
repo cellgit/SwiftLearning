@@ -14,6 +14,7 @@ class SwiftGrammarViewController: BaseTableViewController {
     let KRxSwiftIdentifier = "RxSwiftIdentifier"
     let KPromiseIdentifier = "PromiseIdentifier"
     let KNetworkRequestIdentifier = "NetworkRequestIdentifier"
+    let KFunctionalSwiftIdentifier = "FunctionalSwiftIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,12 @@ class SwiftGrammarViewController: BaseTableViewController {
         let data1 = TableViewDataStruct.init(title: "RxSwift", identifier: KRxSwiftIdentifier)
         let data2 = TableViewDataStruct.init(title: "PromiseKit", identifier: KPromiseIdentifier)
         let data3 = TableViewDataStruct.init(title: "NetworkRequest", identifier: KNetworkRequestIdentifier)
+        let data4 = TableViewDataStruct.init(title: "FunctionalSwift", identifier: KFunctionalSwiftIdentifier)
         tableviewDataArray = [data0,
                               data1,
                               data2,
-                              data3]
+                              data3,
+                              data4]
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -47,6 +50,8 @@ class SwiftGrammarViewController: BaseTableViewController {
             vc = PromiseListViewController.init()
         case KNetworkRequestIdentifier:
             vc = NetReqListViewController.init()
+        case KFunctionalSwiftIdentifier:
+            vc = FunctionalListViewController.init()
         default:
             vc = ProtocolListViewController.init()
         }
