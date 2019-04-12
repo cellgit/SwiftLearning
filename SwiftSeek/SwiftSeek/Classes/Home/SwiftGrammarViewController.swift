@@ -15,6 +15,9 @@ class SwiftGrammarViewController: BaseTableViewController {
     let KPromiseIdentifier = "PromiseIdentifier"
     let KNetworkRequestIdentifier = "NetworkRequestIdentifier"
     let KFunctionalSwiftIdentifier = "FunctionalSwiftIdentifier"
+    let KButtonExtensionSampleIdentifier = "ButtonExtensionSampleIdentifier"
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +33,13 @@ class SwiftGrammarViewController: BaseTableViewController {
         let data2 = TableViewDataStruct.init(title: "PromiseKit", identifier: KPromiseIdentifier)
         let data3 = TableViewDataStruct.init(title: "NetworkRequest", identifier: KNetworkRequestIdentifier)
         let data4 = TableViewDataStruct.init(title: "FunctionalSwift", identifier: KFunctionalSwiftIdentifier)
+        let data5 = TableViewDataStruct.init(title: "ButtonExtensionSample", identifier: KButtonExtensionSampleIdentifier)
         tableviewDataArray = [data0,
                               data1,
                               data2,
                               data3,
-                              data4]
+                              data4,
+                              data5]
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -52,6 +57,8 @@ class SwiftGrammarViewController: BaseTableViewController {
             vc = NetReqListViewController.init()
         case KFunctionalSwiftIdentifier:
             vc = FunctionalListViewController.init()
+        case KButtonExtensionSampleIdentifier:
+            vc = UIButtonSampleListViewController.init()
         default:
             vc = ProtocolListViewController.init()
         }

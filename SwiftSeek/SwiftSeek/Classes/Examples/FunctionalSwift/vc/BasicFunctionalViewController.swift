@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// 船舰问题(函数式)
+
 class BasicFunctionalViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -108,6 +110,7 @@ extension Position {
         return {point in point.minus(center).length <= radius}
     }
     
+    // 判断区域偏移后,点是否在区域内
     func shift(_ region: @escaping Region, by offset: Position) -> Region {
         return {point in region(point.minus(offset))}
     }

@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class HotkeysModel: NSObject {
+struct HotkeysModel {
     /// id
     var id: String = ""
     /// 快捷键
@@ -27,7 +27,7 @@ extension HotkeysModel : SWModelProtocal {
             var array = [HotkeysModel]()
             let dataArr = json.arrayValue
             for item in dataArr {
-                let model = HotkeysModel()
+                var model = HotkeysModel()
                 model.id = item["id"].stringValue
                 model.hotkey = item["hotkey"].stringValue
                 model.function = item["function"].stringValue
@@ -36,7 +36,7 @@ extension HotkeysModel : SWModelProtocal {
             success(SWSucceedParamsStruct.init(array: array, json: json))
         }) { (error) in
             sendError(error)
-            print("\(self.description)DataError:\(error)")
+            print("DataError:\(error)")
         }
     }
 }
