@@ -23,10 +23,18 @@ class SketchHotkeysPresenter: NSObject {
     }
     
     func gotoRequestCommunityData(params: SWNetworkParamsStruct) {
+//        self.model.requestData(params: params, isEncrypting: false, success: { (data) in
+//            self.containerView.showView(data: data)
+//        }) { (error) in
+//            print("数据请求失败 ==== \(error)")
+//        }
+        
         self.model.requestData(params: params, isEncrypting: false, success: { (data) in
             self.containerView.showView(data: data)
-        }) { (error) in
+        }, failure: { (error) in
             print("数据请求失败 ==== \(error)")
+        }) {
+            print("数据请求完成")
         }
     }
 }

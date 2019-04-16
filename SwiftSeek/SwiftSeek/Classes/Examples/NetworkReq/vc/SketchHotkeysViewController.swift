@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PromiseKit
+import Alamofire
 
 class SketchHotkeysViewController: UIViewController {
     
@@ -36,6 +38,8 @@ class SketchHotkeysViewController: UIViewController {
         self.containerView = SketchHotkeysView.init(frame: UIScreen.main.bounds)
         self.view.addSubview(self.containerView)
         self.presenter = SketchHotkeysPresenter.init(model: HotkeysModel(), containerView: self.containerView)
+        
+        
     }
 }
 
@@ -46,5 +50,10 @@ extension SketchHotkeysViewController {
         print("url === \(url)")
         let params = SWNetworkParamsStruct.init(url: url, dict: dict, method: .post)
         self.presenter.gotoRequestCommunityData(params: params)
+        
     }
+    
+    
+    
+    
 }

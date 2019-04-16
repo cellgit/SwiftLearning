@@ -9,6 +9,6 @@
 import UIKit
 
 typealias SWSucceedTypealias = (_ model: SWSucceedParamsStruct<Any>) -> Void
-typealias SWErrorTypealias = (_ errorMsg : String) -> Void
+//typealias SWErrorTypealias = (_ errorMsg : String) -> Void
 
 typealias SWSucceedMultiTypealias = (_ model: SWSucceedMultiParamsStruct<Any>) -> Void

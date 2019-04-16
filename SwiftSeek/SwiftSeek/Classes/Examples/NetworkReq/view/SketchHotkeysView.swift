@@ -7,21 +7,39 @@
 //
 
 import UIKit
+import SkeletonView
 
-class SketchHotkeysView: UIView {
+//public protocol SkeletonTableViewDataSource: UITableViewDataSource {
+//    func numSections(in collectionSkeletonView: UITableView) -> Int
+//    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int
+//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier
+//}
+
+class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
 
     var viewController = SketchHotkeysViewController()
     let KHotKeysCell = "HotKeysCell"
     var tableView: UITableView!
     var dataList = [HotkeysModel]()
     
+    var type: SkeletonType {
+        return .solid
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setTable()
+//        tableView.isSkeletonable = true
+//        self.showAnimatedSkeleton()
+        
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    
     
     func setTable() {
         tableView = UITableView.init(frame: self.frame, style: .grouped)
@@ -48,6 +66,10 @@ class SketchHotkeysView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+//        return KHotKeysCell
+//    }
 }
 
 extension SketchHotkeysView: UITableViewDataSource,UITableViewDelegate {
@@ -56,6 +78,8 @@ extension SketchHotkeysView: UITableViewDataSource,UITableViewDelegate {
             return 0
         }
         return dataList.count
+        
+//        return 10
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -92,4 +116,8 @@ extension SketchHotkeysView: SWViewProtocol {
             self.tableView.reloadData()
         })
     }
+}
+
+extension SketchHotkeysView {
+    
 }

@@ -17,6 +17,7 @@ PODS:
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.4.2):
     - RxAtomic (>= 4.4.2, ~> 4.4)
+  - SkeletonView (1.4.2)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - PromiseKit (~> 6.7.0)
   - RxCocoa (~> 4.4.0)
   - RxSwift (~> 4.4.0)
+  - SkeletonView (~> 1.4.2)
   - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxSwift
+    - SkeletonView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -44,8 +47,9 @@ SPEC CHECKSUMS:
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
+  SkeletonView: c2523c3c8c6510e273e49a3bf364a434744c3914
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: e19b450c96348d41bcb8bcfbf4b1970099fbce11
+PODFILE CHECKSUM: f969ae59292e893e4ea75980075bbcb68684a0d1
 
 COCOAPODS: 1.5.3

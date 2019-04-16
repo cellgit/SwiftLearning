@@ -106,16 +106,16 @@ protocol SWTextDelegate {
 
 
 protocol SWModelProtocal {
-    func requestData(params: SWNetworkParamsStruct, isEncrypting: Bool, success: @escaping SWSucceedTypealias, sendError:@escaping SWErrorTypealias)
+    func requestData(params: SWNetworkParamsStruct, isEncrypting: Bool, success: @escaping SWSucceedTypealias, failure: @escaping Failure, finally: @ escaping Finished)
 }
 
 protocol SWMultiModelProtocal {
-    func requestData(params: SWNetworkParamsStruct, isEncrypting: Bool, success: @escaping SWSucceedMultiTypealias, sendError:@escaping SWErrorTypealias)
+    func requestData(params: SWNetworkParamsStruct, isEncrypting: Bool, success: @escaping SWSucceedMultiTypealias, failure: @escaping Failure)
 }
 
 
 /// 模型的协议
 protocol SWUploadImageModelProtocal {
-    func requestData(params: SWNetworkParamsStruct, imgParams: [UIImage], isEncrypting: Bool, success: @escaping SWSucceedTypealias, sendError:@escaping SWErrorTypealias)
+    func requestData(params: SWNetworkParamsStruct, imgParams: [UIImage], isEncrypting: Bool, success: @escaping SWSucceedTypealias, failure: @escaping Failure)
 }
 

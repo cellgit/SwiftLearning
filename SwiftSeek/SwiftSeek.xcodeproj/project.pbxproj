@@ -47,6 +47,7 @@
 		F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D421E835560078C29F /* ProtocolListViewController.swift */; };
 		F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */; };
 		F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */; };
+		F270DA2C226175B70077CBDB /* Alamofire+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F270DA2B226175B60077CBDB /* Alamofire+Promise.swift */; };
 		F29432B3224FBC450038B517 /* FunctionalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29432B2224FBC450038B517 /* FunctionalListViewController.swift */; };
 		F29432B5224FBC640038B517 /* BasicFunctionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29432B4224FBC640038B517 /* BasicFunctionalViewController.swift */; };
 		F29432B72250D2240038B517 /* FunctionalCoreImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29432B62250D2240038B517 /* FunctionalCoreImageViewController.swift */; };
@@ -122,6 +123,7 @@
 		F26986D421E835560078C29F /* ProtocolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolListViewController.swift; sourceTree = "<group>"; };
 		F26986D621E835EC0078C29F /* BasicProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolViewController.swift; sourceTree = "<group>"; };
 		F26986D821E845250078C29F /* BasicProtocolGrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicProtocolGrammarViewController.swift; sourceTree = "<group>"; };
+		F270DA2B226175B60077CBDB /* Alamofire+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Promise.swift"; sourceTree = "<group>"; };
 		F29432B2224FBC450038B517 /* FunctionalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalListViewController.swift; sourceTree = "<group>"; };
 		F29432B4224FBC640038B517 /* BasicFunctionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFunctionalViewController.swift; sourceTree = "<group>"; };
 		F29432B62250D2240038B517 /* FunctionalCoreImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalCoreImageViewController.swift; sourceTree = "<group>"; };
@@ -195,8 +197,9 @@
 		F23FF70822291BE8009A00B0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F23FF7112229271E009A00B0 /* APIManager.swift */,
+				F270DA2B226175B60077CBDB /* Alamofire+Promise.swift */,
 				F23FF70922291BFB009A00B0 /* Theme.swift */,
+				F23FF7112229271E009A00B0 /* APIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -678,6 +682,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +723,7 @@
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
 				F23FF73122293194009A00B0 /* SketchHotkeysPresenter.swift in Sources */,
 				F246FCB22257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift in Sources */,
+				F270DA2C226175B70077CBDB /* Alamofire+Promise.swift in Sources */,
 				F23FF70A22291BFB009A00B0 /* Theme.swift in Sources */,
 				F23FF73322293366009A00B0 /* SWSize.swift in Sources */,
 				F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */,

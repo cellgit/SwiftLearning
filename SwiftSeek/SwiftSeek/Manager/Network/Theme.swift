@@ -10,28 +10,34 @@
 import UIKit
 import Alamofire
 import CommonCrypto
+//import PromiseKit
+//import SwiftyJSON
 
 typealias  ReqSuccess = (_ responseObject: AnyObject?)->Void
 typealias ReqError = (_ error: String)->Void
 
+typealias Failure = (_ error: Error)->Void
+typealias Finished = ()->Void
+
+
 struct Theme {
     static let shared = Theme()
     // requet: default is post
-    public func request(method: HTTPMethod, path: String, parameters: [String : Any], isEncrypting : Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError){
+    public func request(method: HTTPMethod, path: String, parameters: [String : Any], isEncrypting : Bool, success: @escaping ReqSuccess, failure: @escaping Failure, finally: @escaping Finished) {
         switch method {
         case .post:
-            self.postRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, sendError: sendError)
+            return self.postRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, failure: failure, finally: finally)
         case .get:
-            self.getRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, sendError: sendError)
+            return self.getRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, failure: failure, finally: finally)
         default:
-            self.postRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, sendError: sendError)
+            return self.postRequest(path: path, parameters: parameters, isEncrypting: isEncrypting, success: success, failure: failure, finally: finally)
         }
     }
 }
 
 private extension Theme {
     // post request
-    private func postRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError) {
+    private func postRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, failure: @escaping Failure, finally: @escaping Finished) {
         var headers = [String:String]()
         let token = UserInfo == nil ? "" : UserInfo!.token
         if isEncrypting {
@@ -41,21 +47,24 @@ private extension Theme {
             headers = ["Content-Type":"application/json"]
         }
         print(headers)
-        Alamofire.request(path, method: .post, parameters: parameters, encoding: JSONEncoding.default,headers : headers).responseJSON { (response) in
+        
+        Alamofire.request(path, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers)
+            .responseJSON()
             
-            guard response.result.isSuccess else {
-                sendError("网络错误")
-                print("error: \(String(describing: response.result.error))")
-                return
+            .done { str, rsp in
+                print("--- 请求结果 ---\(str)")
+                success(str as AnyObject)
             }
-            if let results = response.result.value {
-                success(results as AnyObject)
-            }
+            .catch { (error) in
+                print("--- 请求失败 ---")
+                failure(error)
+            }.finally {
+                print("--- 请求完成 ---")
         }
     }
     
     // get request
-    private func getRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, sendError: @escaping ReqError){
+    private func getRequest(path: String, parameters: [String : Any], isEncrypting: Bool, success: @escaping ReqSuccess, failure: @escaping Failure, finally: @escaping Finished){
         var headers = [String:String]()
         let token = UserInfo == nil ? "" : UserInfo!.token
         if isEncrypting {
@@ -64,20 +73,23 @@ private extension Theme {
         }else{
             headers = ["Content-Type":"application/json"]
         }
-        Alamofire.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers : headers).responseJSON { (response) in
-            
-            guard response.result.isSuccess else {
-                sendError("网络错误")
-                print("error: \(String(describing: response.result.error))")
-                return
+        
+        Alamofire.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers)
+            .responseJSON()
+            .done { str, rsp in
+                print("--- 请求结果 ---")
+                print(str)
+                if let results = rsp.request?.value {
+                    success(results as AnyObject)
+                }
             }
-            if let results = response.result.value {
-                success(results as AnyObject)
-                
-            }
+            .catch { (error) in
+                print("--- 请求失败 ---")
+                print(error)
+            }.finally {
+                print("--- 请求完成 ---")
         }
     }
-
 }
 
 extension Theme {
