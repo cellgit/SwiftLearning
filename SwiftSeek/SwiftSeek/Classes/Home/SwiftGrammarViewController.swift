@@ -16,6 +16,7 @@ class SwiftGrammarViewController: BaseTableViewController {
     let KNetworkRequestIdentifier = "NetworkRequestIdentifier"
     let KFunctionalSwiftIdentifier = "FunctionalSwiftIdentifier"
     let KButtonExtensionSampleIdentifier = "ButtonExtensionSampleIdentifier"
+    let KPageControlViewControllerIdentifier = "PageControlViewControllerIdentifier"
     
     
     
@@ -34,12 +35,14 @@ class SwiftGrammarViewController: BaseTableViewController {
         let data3 = TableViewDataStruct.init(title: "NetworkRequest", identifier: KNetworkRequestIdentifier)
         let data4 = TableViewDataStruct.init(title: "FunctionalSwift", identifier: KFunctionalSwiftIdentifier)
         let data5 = TableViewDataStruct.init(title: "ButtonExtensionSample", identifier: KButtonExtensionSampleIdentifier)
+        let data6 = TableViewDataStruct.init(title: "PageControlViewController", identifier: KPageControlViewControllerIdentifier)
         tableviewDataArray = [data0,
                               data1,
                               data2,
                               data3,
                               data4,
-                              data5]
+                              data5,
+                              data6]
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -59,6 +62,10 @@ class SwiftGrammarViewController: BaseTableViewController {
             vc = FunctionalListViewController.init()
         case KButtonExtensionSampleIdentifier:
             vc = UIButtonSampleListViewController.init()
+        case KPageControlViewControllerIdentifier:
+            vc = PageScrollListViewController.init()
+            
+            
         default:
             vc = ProtocolListViewController.init()
         }

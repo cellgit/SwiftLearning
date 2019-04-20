@@ -16,8 +16,11 @@ import SkeletonView
 //}
 
 class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
+    
+    var identifier: String = ""
+    
 
-    var viewController = SketchHotkeysViewController()
+    var viewController = UIViewController()
     let KHotKeysCell = "HotKeysCell"
     var tableView: UITableView!
     var dataList = [HotkeysModel]()
@@ -30,6 +33,14 @@ class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        if identifier == "0" {
+            self.viewController = SketchHotkeysViewController()
+        }
+        else if identifier == "1" {
+            self.viewController = PageScrollViewController()
+        }
+        
         setTable()
 //        tableView.isSkeletonable = true
 //        self.showAnimatedSkeleton()
@@ -88,8 +99,16 @@ extension SketchHotkeysView: UITableViewDataSource,UITableViewDelegate {
         if dataList.isEmpty { return UITableViewCell.init() }
         let cell :HotKeysCell = tableView.dequeueReusableCell(withIdentifier: KHotKeysCell, for: indexPath) as! HotKeysCell
         let model: HotkeysModel = dataList[indexPath.section]
-        cell.model = model
-        return cell
+        if self.identifier == "0" {
+            cell.model = model
+            return cell
+        }
+        else {
+//            cell.textLabel?.text = (self.viewController as! ScrollTabelViewController).channelId
+            
+            cell.textLabel?.text = "12333333"
+            return cell
+        }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

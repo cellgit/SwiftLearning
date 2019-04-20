@@ -47,7 +47,7 @@ extension SketchHotkeysViewController {
     func reqData() {
         let dict = ["":""]
         let url = APIManager.baseUrl + API.SKETCH
-        print("url === \(url)")
+//        print("url === \(url)")
         let params = SWNetworkParamsStruct.init(url: url, dict: dict, method: .post)
         self.presenter.gotoRequestCommunityData(params: params)
         

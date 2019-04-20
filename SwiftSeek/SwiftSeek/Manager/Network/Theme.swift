@@ -52,14 +52,14 @@ private extension Theme {
             .responseJSON()
             
             .done { str, rsp in
-                print("--- 请求结果 ---\(str)")
+//                print("--- 请求结果 ---\(str)")
                 success(str as AnyObject)
             }
             .catch { (error) in
                 print("--- 请求失败 ---")
                 failure(error)
             }.finally {
-                print("--- 请求完成 ---")
+//                print("--- 请求完成 ---")
         }
     }
     
@@ -77,8 +77,8 @@ private extension Theme {
         Alamofire.request(path, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON()
             .done { str, rsp in
-                print("--- 请求结果 ---")
-                print(str)
+//                print("--- 请求结果 ---")
+//                print(str)
                 if let results = rsp.request?.value {
                     success(results as AnyObject)
                 }
@@ -87,7 +87,7 @@ private extension Theme {
                 print("--- 请求失败 ---")
                 print(error)
             }.finally {
-                print("--- 请求完成 ---")
+//                print("--- 请求完成 ---")
         }
     }
 }

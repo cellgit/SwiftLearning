@@ -45,7 +45,7 @@ extension HotkeysModel : SWModelProtocal {
         
         Theme.shared.request(method: params.method, path: params.url, parameters: params.dict, isEncrypting: isEncrypting, success: { (responseObject) in
             let json = JSON(responseObject!)
-            print("json ======= \(json)")
+//            print("json ======= \(json)")
             var array = [HotkeysModel]()
             let dataArr = json.arrayValue
             for item in dataArr {

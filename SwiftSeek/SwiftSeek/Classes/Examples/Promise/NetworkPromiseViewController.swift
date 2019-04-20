@@ -61,7 +61,7 @@ extension NetworkPromiseViewController {
             .validate() //这个也是PromiseKit提供的扩展方法，比如自动将 404 转成错误
             .done { data, response in
                 let str = String(data: data, encoding: String.Encoding.utf8)
-                print("--- 请求结果如下 ---")
+//                print("--- 请求结果如下 ---")
                 print(str ?? "")
         }
     }

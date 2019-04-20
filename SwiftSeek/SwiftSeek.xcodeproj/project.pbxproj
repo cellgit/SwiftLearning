@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		56A9CD03B1900C52CBA0002A /* Pods_SwiftSeek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */; };
+		F21D655A226ABB82005FCD97 /* PageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D6559226ABB82005FCD97 /* PageScrollViewController.swift */; };
+		F21D655C226ACF53005FCD97 /* PageScrollListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D655B226ACF53005FCD97 /* PageScrollListViewController.swift */; };
+		F21D655E226AFDC6005FCD97 /* ScrollTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D655D226AFDC6005FCD97 /* ScrollTabelViewController.swift */; };
 		F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */; };
 		F23FF70A22291BFB009A00B0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF70922291BFB009A00B0 /* Theme.swift */; };
 		F23FF70D22291DAB009A00B0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FF70C22291DAB009A00B0 /* UserModel.swift */; };
@@ -78,6 +81,9 @@
 		02CE161D957791454BE18743 /* Pods_SwiftSeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DE8FAAD8780029D1A27F5B /* Pods-SwiftSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek.release.xcconfig"; sourceTree = "<group>"; };
+		F21D6559226ABB82005FCD97 /* PageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScrollViewController.swift; sourceTree = "<group>"; };
+		F21D655B226ACF53005FCD97 /* PageScrollListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageScrollListViewController.swift; sourceTree = "<group>"; };
+		F21D655D226AFDC6005FCD97 /* ScrollTabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabelViewController.swift; sourceTree = "<group>"; };
 		F2396F1D21F7FD36002F4AE8 /* SWEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWEnum.swift; sourceTree = "<group>"; };
 		F23FF70922291BFB009A00B0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F23FF70C22291DAB009A00B0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -174,6 +180,48 @@
 				D4C657C5881A6BBB5F1F388D /* Pods-SwiftSeek.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F21D6554226ABAA1005FCD97 /* PageScroll */ = {
+			isa = PBXGroup;
+			children = (
+				F21D6556226ABB39005FCD97 /* vc */,
+				F21D6557226ABB39005FCD97 /* view */,
+				F21D6555226ABB39005FCD97 /* presenter */,
+				F21D6558226ABB3A005FCD97 /* model */,
+			);
+			path = PageScroll;
+			sourceTree = "<group>";
+		};
+		F21D6555226ABB39005FCD97 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F21D6556226ABB39005FCD97 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F21D655B226ACF53005FCD97 /* PageScrollListViewController.swift */,
+				F21D6559226ABB82005FCD97 /* PageScrollViewController.swift */,
+				F21D655D226AFDC6005FCD97 /* ScrollTabelViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F21D6557226ABB39005FCD97 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F21D6558226ABB3A005FCD97 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		F2396F1C21F7FD02002F4AE8 /* Enum */ = {
@@ -397,6 +445,7 @@
 		F26986CE21E831670078C29F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F21D6554226ABAA1005FCD97 /* PageScroll */,
 				F29432AD224FBBE00038B517 /* FunctionalSwift */,
 				F2C31F6F2247C6FA00472C90 /* NVActivityIndicatorView */,
 				F23FF7132229297F009A00B0 /* NetworkReq */,
@@ -715,12 +764,15 @@
 				F23FF72F22292FDA009A00B0 /* TypealiasManager.swift in Sources */,
 				F23FF7122229271E009A00B0 /* APIManager.swift in Sources */,
 				F246FCB02257B0C300AB1C93 /* UIButtonSampleListViewController.swift in Sources */,
+				F21D655A226ABB82005FCD97 /* PageScrollViewController.swift in Sources */,
 				F23FF717222929CA009A00B0 /* NetReqListViewController.swift in Sources */,
 				F23FF71022291E0C009A00B0 /* FilePath.swift in Sources */,
 				F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */,
 				F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */,
 				F23FF73522293382009A00B0 /* SWColor.swift in Sources */,
+				F21D655E226AFDC6005FCD97 /* ScrollTabelViewController.swift in Sources */,
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
+				F21D655C226ACF53005FCD97 /* PageScrollListViewController.swift in Sources */,
 				F23FF73122293194009A00B0 /* SketchHotkeysPresenter.swift in Sources */,
 				F246FCB22257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift in Sources */,
 				F270DA2C226175B70077CBDB /* Alamofire+Promise.swift in Sources */,
