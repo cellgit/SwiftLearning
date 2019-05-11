@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.8.1)
+  - Hero (1.4.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Kingfisher (4.10.1)
   - NVActivityIndicatorView (4.4.1):
     - NVActivityIndicatorView/Presenter (= 4.4.1)
   - NVActivityIndicatorView/Presenter (4.4.1)
@@ -12,44 +15,83 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.7.1):
     - PromiseKit/CorePromise
+  - QuickLayout (2.1.1)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - RxAtomic (4.4.2)
   - RxCocoa (4.4.2):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.4.2):
     - RxAtomic (>= 4.4.2, ~> 4.4)
   - SkeletonView (1.4.2)
+  - SKPhotoBrowser (6.0.0)
+  - SwiftEntryKit (0.8.8):
+    - QuickLayout (= 2.1.1)
   - SwiftyJSON (4.2.0)
+  - Timepiece (1.3.1)
+  - Toast-Swift (4.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.1)
+  - Hero (~> 1.4.0)
+  - IQKeyboardManagerSwift (~> 6.2.0)
+  - Kingfisher (~> 4.10.1)
   - NVActivityIndicatorView (~> 4.4.0)
   - PromiseKit (~> 6.7.0)
+  - RealmSwift (~> 3.13.1)
   - RxCocoa (~> 4.4.0)
   - RxSwift (~> 4.4.0)
   - SkeletonView (~> 1.4.2)
+  - SKPhotoBrowser (~> 6.0.0)
+  - SwiftEntryKit (= 0.8.8)
   - SwiftyJSON (~> 4.2.0)
+  - Timepiece (~> 1.3.1)
+  - Toast-Swift (~> 4.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Hero
+    - IQKeyboardManagerSwift
+    - Kingfisher
     - NVActivityIndicatorView
     - PromiseKit
+    - QuickLayout
+    - Realm
+    - RealmSwift
     - RxAtomic
     - RxCocoa
     - RxSwift
     - SkeletonView
+    - SKPhotoBrowser
+    - SwiftEntryKit
     - SwiftyJSON
+    - Timepiece
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
   PromiseKit: ef376fb8b4e92edfeb66bd403b983eaa07fbde0c
+  QuickLayout: 9af2b7fd89a6552828f51a5aba28d1bcdb8b340c
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
   SkeletonView: c2523c3c8c6510e273e49a3bf364a434744c3914
+  SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
+  SwiftEntryKit: c50f25a14772713ded1591c852d1c1dc74c95b9e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Timepiece: c0760ec0e545697d86b80424dcd2b4d5ef66cf51
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: f969ae59292e893e4ea75980075bbcb68684a0d1
+PODFILE CHECKSUM: 622f7d5e9bafe04a22858a354d7ad5b9d7d4389f
 
 COCOAPODS: 1.5.3

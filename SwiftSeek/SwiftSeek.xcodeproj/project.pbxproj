@@ -31,6 +31,21 @@
 		F246FCAC2257ADA000AB1C93 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246FCAB2257ADA000AB1C93 /* UIButtonExtensions.swift */; };
 		F246FCB02257B0C300AB1C93 /* UIButtonSampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246FCAF2257B0C300AB1C93 /* UIButtonSampleListViewController.swift */; };
 		F246FCB22257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246FCB12257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift */; };
+		F25964AC228656CA00D32CDA /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964A8228656CA00D32CDA /* EntryViewController.swift */; };
+		F25964AD228656CA00D32CDA /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964A9228656CA00D32CDA /* EntryListViewController.swift */; };
+		F25964AF228656E100D32CDA /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964AE228656E100D32CDA /* EntryView.swift */; };
+		F25964B12286570100D32CDA /* EntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964B02286570100D32CDA /* EntryPresenter.swift */; };
+		F25964B522865AD700D32CDA /* NibExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964B322865AD700D32CDA /* NibExampleView.swift */; };
+		F25964B622865AD700D32CDA /* NibExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25964B422865AD700D32CDA /* NibExampleView.xib */; };
+		F25964B922865B0100D32CDA /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964B822865B0000D32CDA /* ExampleViewController.swift */; };
+		F25964BD22865B5D00D32CDA /* PresetsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964BB22865B5D00D32CDA /* PresetsDataSource.swift */; };
+		F25964BE22865B5D00D32CDA /* PresetDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964BC22865B5D00D32CDA /* PresetDescription.swift */; };
+		F25964C622865B9500D32CDA /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C022865B9500D32CDA /* UIColor+Utils.swift */; };
+		F25964C722865B9500D32CDA /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C122865B9500D32CDA /* CGRect+Utils.swift */; };
+		F25964C822865B9500D32CDA /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C222865B9500D32CDA /* UIScreen+Utils.swift */; };
+		F25964C922865B9500D32CDA /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C322865B9500D32CDA /* Object+ClassName.swift */; };
+		F25964CA22865B9500D32CDA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C422865B9500D32CDA /* Font.swift */; };
+		F25964CB22865B9500D32CDA /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25964C522865B9500D32CDA /* UIView+Nib.swift */; };
 		F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */; };
 		F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */; };
 		F25ED5ED221D4B56001D4C70 /* NetworkPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */; };
@@ -104,6 +119,21 @@
 		F246FCAB2257ADA000AB1C93 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		F246FCAF2257B0C300AB1C93 /* UIButtonSampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonSampleListViewController.swift; sourceTree = "<group>"; };
 		F246FCB12257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonImageTextSampleViewController.swift; sourceTree = "<group>"; };
+		F25964A8228656CA00D32CDA /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		F25964A9228656CA00D32CDA /* EntryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		F25964AE228656E100D32CDA /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F25964B02286570100D32CDA /* EntryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPresenter.swift; sourceTree = "<group>"; };
+		F25964B322865AD700D32CDA /* NibExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibExampleView.swift; sourceTree = "<group>"; };
+		F25964B422865AD700D32CDA /* NibExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibExampleView.xib; sourceTree = "<group>"; };
+		F25964B822865B0000D32CDA /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		F25964BB22865B5D00D32CDA /* PresetsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetsDataSource.swift; sourceTree = "<group>"; };
+		F25964BC22865B5D00D32CDA /* PresetDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetDescription.swift; sourceTree = "<group>"; };
+		F25964C022865B9500D32CDA /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		F25964C122865B9500D32CDA /* CGRect+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
+		F25964C222865B9500D32CDA /* UIScreen+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
+		F25964C322865B9500D32CDA /* Object+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
+		F25964C422865B9500D32CDA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F25964C522865B9500D32CDA /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		F25ED5E8221D3E40001D4C70 /* PromiseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseListViewController.swift; sourceTree = "<group>"; };
 		F25ED5EA221D3F9E001D4C70 /* BasicPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPromiseViewController.swift; sourceTree = "<group>"; };
 		F25ED5EC221D4B56001D4C70 /* NetworkPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPromiseViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +375,84 @@
 			path = UIButtonSamples;
 			sourceTree = "<group>";
 		};
+		F25964A2228654F600D32CDA /* SwiftEntrySamples */ = {
+			isa = PBXGroup;
+			children = (
+				F25964B222865AD700D32CDA /* NibExampleView */,
+				F25964B722865B0000D32CDA /* ExampleViewController */,
+				F25964BA22865B5D00D32CDA /* PresetsData */,
+				F25964BF22865B9500D32CDA /* Utils */,
+				F25964A7228656CA00D32CDA /* vc */,
+				F25964AA228656CA00D32CDA /* view */,
+				F25964AB228656CA00D32CDA /* presenter */,
+			);
+			path = SwiftEntrySamples;
+			sourceTree = "<group>";
+		};
+		F25964A7228656CA00D32CDA /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F25964A9228656CA00D32CDA /* EntryListViewController.swift */,
+				F25964A8228656CA00D32CDA /* EntryViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F25964AA228656CA00D32CDA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F25964AE228656E100D32CDA /* EntryView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F25964AB228656CA00D32CDA /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F25964B02286570100D32CDA /* EntryPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F25964B222865AD700D32CDA /* NibExampleView */ = {
+			isa = PBXGroup;
+			children = (
+				F25964B322865AD700D32CDA /* NibExampleView.swift */,
+				F25964B422865AD700D32CDA /* NibExampleView.xib */,
+			);
+			path = NibExampleView;
+			sourceTree = "<group>";
+		};
+		F25964B722865B0000D32CDA /* ExampleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F25964B822865B0000D32CDA /* ExampleViewController.swift */,
+			);
+			path = ExampleViewController;
+			sourceTree = "<group>";
+		};
+		F25964BA22865B5D00D32CDA /* PresetsData */ = {
+			isa = PBXGroup;
+			children = (
+				F25964BB22865B5D00D32CDA /* PresetsDataSource.swift */,
+				F25964BC22865B5D00D32CDA /* PresetDescription.swift */,
+			);
+			path = PresetsData;
+			sourceTree = "<group>";
+		};
+		F25964BF22865B9500D32CDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F25964C022865B9500D32CDA /* UIColor+Utils.swift */,
+				F25964C122865B9500D32CDA /* CGRect+Utils.swift */,
+				F25964C222865B9500D32CDA /* UIScreen+Utils.swift */,
+				F25964C322865B9500D32CDA /* Object+ClassName.swift */,
+				F25964C422865B9500D32CDA /* Font.swift */,
+				F25964C522865B9500D32CDA /* UIView+Nib.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F25ED5E7221D3E19001D4C70 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +553,7 @@
 		F26986CE21E831670078C29F /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				F25964A2228654F600D32CDA /* SwiftEntrySamples */,
 				F21D6554226ABAA1005FCD97 /* PageScroll */,
 				F29432AD224FBBE00038B517 /* FunctionalSwift */,
 				F2C31F6F2247C6FA00472C90 /* NVActivityIndicatorView */,
@@ -666,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26986A221E8303B0078C29F /* LaunchScreen.storyboard in Resources */,
+				F25964B622865AD700D32CDA /* NibExampleView.xib in Resources */,
 				F269869F21E8303B0078C29F /* Assets.xcassets in Resources */,
 				F269869A21E830390078C29F /* Main.storyboard in Resources */,
 				F23FF72622292E07009A00B0 /* HotKeysCell.xib in Resources */,
@@ -715,24 +825,44 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSeek/Pods-SwiftSeek-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -747,15 +877,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C31F772247C7C800472C90 /* IndicatorViewController.swift in Sources */,
+				F25964AD228656CA00D32CDA /* EntryListViewController.swift in Sources */,
 				F2396F1E21F7FD36002F4AE8 /* SWEnum.swift in Sources */,
 				F29432B72250D2240038B517 /* FunctionalCoreImageViewController.swift in Sources */,
 				F29432B5224FBC640038B517 /* BasicFunctionalViewController.swift in Sources */,
 				F23FF72D22292F6E009A00B0 /* ProtocolsManager.swift in Sources */,
 				F26986CB21E831270078C29F /* SWARHomeViewController.swift in Sources */,
 				F26986CD21E831270078C29F /* SWMainViewController.swift in Sources */,
+				F25964CB22865B9500D32CDA /* UIView+Nib.swift in Sources */,
 				F26986D221E832900078C29F /* BaseTableViewController.swift in Sources */,
 				F23FF71922292A81009A00B0 /* SketchHotkeysViewController.swift in Sources */,
 				F23FF72722292E07009A00B0 /* HotKeysCell.swift in Sources */,
+				F25964C722865B9500D32CDA /* CGRect+Utils.swift in Sources */,
 				F26986CC21E831270078C29F /* SWCoreMLHomeViewController.swift in Sources */,
 				F23FF71F22292C6C009A00B0 /* SketchHotkeysView.swift in Sources */,
 				F23FF72322292D2B009A00B0 /* StructsManager.swift in Sources */,
@@ -764,29 +897,40 @@
 				F23FF72F22292FDA009A00B0 /* TypealiasManager.swift in Sources */,
 				F23FF7122229271E009A00B0 /* APIManager.swift in Sources */,
 				F246FCB02257B0C300AB1C93 /* UIButtonSampleListViewController.swift in Sources */,
+				F25964B922865B0100D32CDA /* ExampleViewController.swift in Sources */,
 				F21D655A226ABB82005FCD97 /* PageScrollViewController.swift in Sources */,
 				F23FF717222929CA009A00B0 /* NetReqListViewController.swift in Sources */,
+				F25964CA22865B9500D32CDA /* Font.swift in Sources */,
 				F23FF71022291E0C009A00B0 /* FilePath.swift in Sources */,
 				F26986D521E835560078C29F /* ProtocolListViewController.swift in Sources */,
+				F25964C822865B9500D32CDA /* UIScreen+Utils.swift in Sources */,
 				F25ED5EB221D3F9E001D4C70 /* BasicPromiseViewController.swift in Sources */,
 				F23FF73522293382009A00B0 /* SWColor.swift in Sources */,
+				F25964BD22865B5D00D32CDA /* PresetsDataSource.swift in Sources */,
 				F21D655E226AFDC6005FCD97 /* ScrollTabelViewController.swift in Sources */,
 				F26986D021E832300078C29F /* SwiftGrammarViewController.swift in Sources */,
 				F21D655C226ACF53005FCD97 /* PageScrollListViewController.swift in Sources */,
 				F23FF73122293194009A00B0 /* SketchHotkeysPresenter.swift in Sources */,
 				F246FCB22257B11F00AB1C93 /* UIButtonImageTextSampleViewController.swift in Sources */,
+				F25964C922865B9500D32CDA /* Object+ClassName.swift in Sources */,
 				F270DA2C226175B70077CBDB /* Alamofire+Promise.swift in Sources */,
 				F23FF70A22291BFB009A00B0 /* Theme.swift in Sources */,
 				F23FF73322293366009A00B0 /* SWSize.swift in Sources */,
 				F2B854C221F06A4300B7E58C /* RxBasicViewController.swift in Sources */,
+				F25964AF228656E100D32CDA /* EntryView.swift in Sources */,
+				F25964C622865B9500D32CDA /* UIColor+Utils.swift in Sources */,
 				F26986D921E845250078C29F /* BasicProtocolGrammarViewController.swift in Sources */,
 				F269869721E830390078C29F /* ViewController.swift in Sources */,
 				F25ED5E9221D3E40001D4C70 /* PromiseListViewController.swift in Sources */,
 				F269869521E830390078C29F /* AppDelegate.swift in Sources */,
 				F29432B3224FBC450038B517 /* FunctionalListViewController.swift in Sources */,
 				F23FF70D22291DAB009A00B0 /* UserModel.swift in Sources */,
+				F25964B522865AD700D32CDA /* NibExampleView.swift in Sources */,
+				F25964B12286570100D32CDA /* EntryPresenter.swift in Sources */,
+				F25964BE22865B5D00D32CDA /* PresetDescription.swift in Sources */,
 				F246FCAC2257ADA000AB1C93 /* UIButtonExtensions.swift in Sources */,
 				F269869D21E830390078C29F /* SwiftSeek.xcdatamodeld in Sources */,
+				F25964AC228656CA00D32CDA /* EntryViewController.swift in Sources */,
 				F2B854C021F068A400B7E58C /* RxListViewController.swift in Sources */,
 				F23FF72B22292E8D009A00B0 /* HotkeysModel.swift in Sources */,
 				F26986D721E835EC0078C29F /* BasicProtocolViewController.swift in Sources */,
