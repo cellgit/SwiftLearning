@@ -28,6 +28,7 @@ PODS:
     - RxAtomic (>= 4.4.2, ~> 4.4)
   - SkeletonView (1.4.2)
   - SKPhotoBrowser (6.0.0)
+  - SnapKit (4.2.0)
   - SwiftEntryKit (0.8.8):
     - QuickLayout (= 2.1.1)
   - SwiftyJSON (4.2.0)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.4.0)
   - SkeletonView (~> 1.4.2)
   - SKPhotoBrowser (~> 6.0.0)
+  - SnapKit
   - SwiftEntryKit (= 0.8.8)
   - SwiftyJSON (~> 4.2.0)
   - Timepiece (~> 1.3.1)
@@ -67,6 +69,7 @@ SPEC REPOS:
     - RxSwift
     - SkeletonView
     - SKPhotoBrowser
+    - SnapKit
     - SwiftEntryKit
     - SwiftyJSON
     - Timepiece
@@ -87,11 +90,12 @@ SPEC CHECKSUMS:
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
   SkeletonView: c2523c3c8c6510e273e49a3bf364a434744c3914
   SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftEntryKit: c50f25a14772713ded1591c852d1c1dc74c95b9e
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Timepiece: c0760ec0e545697d86b80424dcd2b4d5ef66cf51
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: 622f7d5e9bafe04a22858a354d7ad5b9d7d4389f
+PODFILE CHECKSUM: 73fb9f6ce8cacd02cdc23ac2ee86c14f85a6a5a7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2

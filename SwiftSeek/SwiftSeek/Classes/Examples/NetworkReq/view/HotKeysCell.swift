@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import SnapKit
 
 class HotKeysCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
+    
+    @IBOutlet weak var titleLabelConst: NSLayoutConstraint!
+    
     
     var model: HotkeysModel! {
         didSet {
@@ -25,12 +29,19 @@ class HotKeysCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupUI() {
+        self.titleLabel.isSkeletonable = true
+        self.contentLabel.isSkeletonable = true
+        self.descLabel.isSkeletonable = true
     }
     
 }

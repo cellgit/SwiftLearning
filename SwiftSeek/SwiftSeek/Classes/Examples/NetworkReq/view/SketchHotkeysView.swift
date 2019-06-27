@@ -8,6 +8,7 @@
 
 import UIKit
 import SkeletonView
+import SkeletonView
 
 //public protocol SkeletonTableViewDataSource: UITableViewDataSource {
 //    func numSections(in collectionSkeletonView: UITableView) -> Int
@@ -15,7 +16,7 @@ import SkeletonView
 //    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier
 //}
 
-class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
+class SketchHotkeysView: UIView {
     
     var identifier: String = ""
     
@@ -52,6 +53,9 @@ class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
     
     
     
+    
+    
+    
     func setTable() {
         tableView = UITableView.init(frame: self.frame, style: .grouped)
         self.addSubview(tableView)
@@ -76,11 +80,12 @@ class SketchHotkeysView: UIView {//, SkeletonTableViewDataSource
         }
         tableView.delegate = self
         tableView.dataSource = self
+        
+        self.isSkeletonable = true
+        self.tableView.isSkeletonable = true
+        self.tableView.showAnimatedGradientSkeleton()
+        
     }
-    
-//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
-//        return KHotKeysCell
-//    }
 }
 
 extension SketchHotkeysView: UITableViewDataSource,UITableViewDelegate {
@@ -98,17 +103,10 @@ extension SketchHotkeysView: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if dataList.isEmpty { return UITableViewCell.init() }
         let cell :HotKeysCell = tableView.dequeueReusableCell(withIdentifier: KHotKeysCell, for: indexPath) as! HotKeysCell
+        cell.isSkeletonable = true
         let model: HotkeysModel = dataList[indexPath.section]
-        if self.identifier == "0" {
-            cell.model = model
-            return cell
-        }
-        else {
-//            cell.textLabel?.text = (self.viewController as! ScrollTabelViewController).channelId
-            
-            cell.textLabel?.text = "12333333"
-            return cell
-        }
+        cell.model = model
+        return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -133,10 +131,14 @@ extension SketchHotkeysView: SWViewProtocol {
         self.dataList = data.array as! [HotkeysModel]
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
+            
+            self.tableView.hideSkeleton()
         })
     }
 }
 
-extension SketchHotkeysView {
-    
+extension SketchHotkeysView: SkeletonTableViewDataSource {
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return KHotKeysCell
+    }
 }
